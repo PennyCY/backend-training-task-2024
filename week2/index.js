@@ -107,7 +107,12 @@ if (playerA === '剪刀' && playerB === '剪刀') {
 - 是否接收新學員：否
 */
 
-const gymCoach = {}; // 練習：使用物件變數定義兩位教練的資訊
+const gymCoach = {
+  ｛coachName:王教練,
+   goodAt:力量訓練,減重課程
+   personPrice:2000
+  ｝
+}; // 練習：使用物件變數定義兩位教練的資訊
 
 console.log(gymCoach);
 
