@@ -155,7 +155,8 @@ const gymCoach = {
       admitNewStudent:false
     }
   ]
-}; // 練習：使用物件變數定義兩位教練的資訊
+};
+ // 練習：使用物件變數定義兩位教練的資訊
 
 console.log(gymCoach);
 
