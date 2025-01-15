@@ -36,7 +36,11 @@ console.log(`Alex 買完課程了，他一共剩下 ${AlexBudget} 元`);
 // ### 題目四：線稿圖截圖，看圖宣告變數
 // 請參考資料夾內 q4.webp 圖片
 // 請依照你看到的內容來嘗試設計變數和值（至少 3 個）
-
+let salesPrice = 2520;
+let classNumber = 14;
+let minutesPerClass = 50;
+let averageClassPrice = 180;
+let discount = '10%'; 
 
 
 // ### 題目五：布林值與變數定義，看是否有用對 const, let
@@ -49,7 +53,7 @@ let alexOnTheWayToGym = {
   trafficeLight : "red",
   motorNum : 8,
   cloudNum : 5,
-}
+};
 
 const sunNum = 1;
 
@@ -78,23 +82,23 @@ console.log(`Alex 的水壺還有 ${myWater}cc 的水`);
 
 let totalBill = 0;
 const machineUsePrice = 50;
-const groupClassesPrice = 150;
+const groupClassPrice = 150;
 let useTime = 3;
-let classesNum = 2;
-let total = machineUsePrice* useTime + groupClassesPrice*classesNum;
-console.log(
-  `Anna 本週器械使用費共 ${machineUsePriceTotal} 元，團體課費用共 ${groupClassesTotal} 元，一共消費金額是 ${total}元`
-);
+let classNum = 2;
+let machineUsePriceTotal = machineUsePrice*useTime;
+let groupClassTotal = groupClassPrice*classNum;
+totalBill += machineUsePriceTotal + groupClassTotal;
+console.log(  `Anna 本週器械使用費共 ${machineUsePriceTotal} 元，團體課費用共 ${groupClassTotal} 元，一共消費金額是 ${totalBill}元`);
 
 // ### 題目八：變數重新賦予值
 // 情境：請依照以下程式碼告知答案是多少，並在下方用註解方式寫上這五行程式碼做了什麼事
 // 以下程式碼請勿變更
 let a = 8; // 範例：宣告了一個 a 的變數，並賦予了一個 8 的數字型別
-let b = 0; //宣告一個b的變數
-a = 13;
-a = b + 4;
-a - b;
-b += 1;
+let b = 0; //宣告了一個 b 的變數，並賦予了一個 0 的數字型別
+a = 13; //重新賦予變數a一個13的數字型別
+a = b + 4;//取得變數b的值:0,重新賦予變數a為變數b的值+4的數字型別
+a - b;//在CPU中計算變數a減變數b,記憶體的值不會改變
+b += 1;//取得變數b的值0,0+1=1,重新賦予變數b一個1的數字型別
 
 // ### 題目九：型別查詢
 // 請不要觀看 console.log，透過註解告知解答每個變數的型別
@@ -110,10 +114,10 @@ let h = f + g;
 // b 是 ???
 // c 是 string
 // d 是 number
-// e 是 
+// e 是 string //數字與字串相加,數字會自動轉型為字串
 // f 是 bulin
 // g 是 number
-// h 是 
+// h 是 number //布林值與數字相加,布林值會自動轉型為數字
 
 // ### 題目十：傳值與傳參考
 // 情境：請依照程式碼告知答案是多少，並在下方用註解方式寫上這五行程式碼做了什麼事
@@ -129,4 +133,4 @@ numberArr2 = [25, 30, 35];
 //重新定義陣列numberArr2，值為25,30,35;
 console.log(numberArr1, numberArr2);
 //印出陣列numberArr1和numberArr2的結果
-//最終答案為:numberArr1=[5,10,15,20] ,numberArr2 =[25, 30, 35]];
+//最終答案為:numberArr1=[5,10,15,20] ,numberArr2 =[25, 30, 35];
