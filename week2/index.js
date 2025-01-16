@@ -180,14 +180,14 @@ let performanceData = {
 
 // 練習：第一位教練（可將下方程式碼註解移除，完成答題）
 
-if ( coaches[0]['name']==='Alice'/* 判斷邏輯，使其為 true */) {
-  coaches[0]['performance'] += 8000  // 請填寫第一位教練業績增長程式碼，使用 +=
+if ( performanceData['coaches'][0]['name']==='Alice'/* 判斷邏輯，使其為 true */) {
+  performanceData['coaches'][0]['performance'] += 8000  // 請填寫第一位教練業績增長程式碼，使用 +=
 };
 
 // 練習：第二位教練（可將下方程式碼註解移除，完成答題）
 
-if ( coaches[1]['name'] === 'Bob'/* 判斷邏輯，使其為 true */) {
-   coaches[1]['performance'] += 12000// 請填寫第二位教練業績增長程式碼，使用 +=
+if ( performanceData['coaches'][1]['name'] === 'Bob'/* 判斷邏輯，使其為 true */) {
+   performanceData['coaches'][1]['performance'] += 12000// 請填寫第二位教練業績增長程式碼，使用 +=
 };
 
 console.log(performanceData);
