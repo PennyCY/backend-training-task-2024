@@ -34,7 +34,7 @@ var k = 3;//宣告變數為k,並賦值number型別為3
 var l = '8';//宣告變數為l,並賦值string型別為「8」
 // 請文字解釋為什麼
 console.log(k * l > 21);
-//?????
+//取出變數k的值3和變數l的值「8」,number和string相乘,string會轉型為number,3*8=24>21,故印出結果為true
 
 // ### 題目三：邏輯運算子 + if, else
 // 情境：健身房週年慶，買課程送贈品
